@@ -7,7 +7,6 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 import joblib
-import numpy as np
 import pandas as pd
 from typing import Optional
 import uvicorn
@@ -144,7 +143,7 @@ def get_confidence_level(churn_prob: float) -> str:
         return "Low"
 
 
-@app.get("/")
+@app.get("/online")
 async def root():
     """Health check endpoint."""
     return {
@@ -287,9 +286,4 @@ if __name__ == "__main__":
     print("🌐 Server will be available at: http://localhost:8000")
     print("📖 API documentation at: http://localhost:8000/docs")
     
-    uvicorn.run(
-        app,
-        host="localhost",
-        port=8000,
-        log_level="info"
-    )
+    uvicorn.run(app, host="127.0.0.1", port=8000)

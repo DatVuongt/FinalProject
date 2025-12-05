@@ -15,10 +15,10 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy application files
-COPY backend.py .
+COPY back_end.py .
 COPY index.html ./static/
-COPY best_churn_model.pkl .
-COPY best_clv_model.pkl .
+COPY best_churn_model_trf.pkl .
+COPY best_clv_model_lnr.pkl .
 
 # Expose port
 EXPOSE 8000
@@ -28,4 +28,4 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
     CMD curl -f http://localhost:8000/health || exit 1
 
 # Run the application
-CMD ["python", "backend.py"]
+CMD ["python", "back_end.py"]

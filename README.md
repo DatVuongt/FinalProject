@@ -24,6 +24,7 @@ Provide actionable recommendations for retention strategies
  - AWS Account (free tier works!)
  - Basic command line knowledge
  - SSH key pair for EC2
+   
 ** What's Included: **
  - 2 Pre-trained ML models
  - Professional web interface
@@ -31,47 +32,35 @@ Provide actionable recommendations for retention strategies
  - Real-time predictions
 
 
-2. Installation
-Option 1: Local Development (Testing)
-Step 1: Clone Repository
-bashgit clone https://github.com/Andres-lng/ML-DL-FINALPROJECT.git
-cd ML-DL-FINALPROJECT
-Step 2: Install Dependencies
-bashpip install -r requirements.txt
-Step 3: Run Application
-bashpython backend.py
-Step 4: Access Application
+## 2. Installation
+** Option 1: Local Development (Testing) **
+### 1. Step 1: Clone Repository
+- git clone https://github.com/Andres-lng/ML-DL-FINALPROJECT.git
+- cd ML-DL-FINALPROJECT
+### Step 2: Install Dependencies
+- pip install -r requirements.txt
+### Step 3: Run Application
+- python backend.py
+### Step 4: Access Application
 Open browser: http://localhost:8000
 
-Option 2: AWS EC2 Deployment (Production Demo)
-Step 1: Launch EC2 Instance
-
-Go to AWS Console → EC2 → Launch Instance
-Configure:
-
-Name: telelink-demo
-AMI: Amazon Linux 2023
-Type: t2.micro (Free Tier)
-Key Pair: Create or select existing
-Security Group: Allow HTTP (80), HTTPS (443), SSH (22)
-
-
-Click Launch
-
-Step 2: Connect to EC2
-ssh -i your-key.pem ec2-user@YOUR_EC2_IP
-Step 3: Clone Repository
-[git clone ML-DL-FINALPROJECT](https://github.com/Andres-lng/ML-DL-FINALPROJECT.git)
-cd ML-DL-FINALPROJECT
-Step 4: Initial Setup (One-Time)
-bash setup-ec2.sh
-Step 5: Deploy Application
-bash deploy.sh
+** Option 2: AWS EC2 Deployment (Production Demo) **
+### Step 1: Launch EC2 Instance
+- Go to AWS Console → EC2 → Launch Instance
+- Configure: 1. Name: telelink-demo | 2. AMI: Amazon Linux 2023 | 3. Type: t2.micro (Free Tier) | 4. Key Pair: Create or select existing | 5.Security Group: Allow HTTP (80), HTTPS (443), SSH (22)
+- Click Launch
+### Step 2: Connect to EC2
+- ssh -i your-key.pem ec2-user@YOUR_EC2_IP
+### Step 3: Clone Repository
+- [git clone ML-DL-FINALPROJECT](https://github.com/Andres-lng/ML-DL-FINALPROJECT.git)
+- cd ML-DL-FINALPROJECT
+### Step 4: Initial Setup (One-Time)
+- bash setup-ec2.sh
+### Step 5: Deploy Application
+- bash deploy.sh
 Step 6: Access Your Application
-http://YOUR_EC2_PUBLIC_IP
-That's it! 🎉 Your application is now live!
-
-
+- http://YOUR_EC2_PUBLIC_IP
+- Your application is now live!
 
 # Technology Stack
 1. Backend

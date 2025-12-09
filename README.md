@@ -100,12 +100,7 @@ That's it! 🎉 Your application is now live!
 # 📊 Machine Learning Models
 1. Model 1: Churn Prediction (Classification)
     Algorithm: Tuned Random Forest Classifier
-    1. Performance Metrics:
-        ✅ Accuracy: 95.2%
-        ✅ Precision: 93.8%
-        ✅ Recall: 89.4%
-        ✅ F1-Score: 91.5%
-
+    1. Performance Metrics: Accuracy: 0.867, Precision: 0.552, Recall: 0.337, F1 Score: 0.418
     2. Features Used:
     Account length
     Call volumes (day/evening/night/international)
@@ -121,10 +116,7 @@ That's it! 🎉 Your application is now live!
     Confidence score
 2. Model 2: Customer Lifetime Value (Regression)
     Algorithm: Linear Regression Pipeline
-    1. Performance Metrics:
-        ✅ R² Score: 0.89
-        ✅ MAE: $2,450
-        ✅ RMSE: $3,120
+    1. Performance Metrics: MAE: 898.36, RMSE: 1108.81, R²: 0.9328
     2. Features Used:
         Account length
         Monthly charges (day/evening/night/international)
@@ -139,7 +131,7 @@ That's it! 🎉 Your application is now live!
 Open your browser and navigate to:
 
 Local: http://localhost:8000
-EC2: http://YOUR_EC2_IP
+EC2: http://www.infosecurity.homes/
 
 2. Enter Customer Data
 Fill in the form with customer information:
@@ -172,7 +164,3 @@ Based on the risk level:
 🟡 Medium Risk: Proactive engagement needed
 🟢 Low Risk: Maintain regular engagement
 
-
-# 🔍 API Documentation
-Once deployed, access interactive API documentation at:
-http://YOUR_IP/docs

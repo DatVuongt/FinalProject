@@ -19,12 +19,12 @@ Provide actionable recommendations for retention strategies
 
 
 # 🚀 Quick Start Guide
-1. Prerequisites
-What You Need:
+## 1. Prerequisites
+** What You Need: **
  - AWS Account (free tier works!)
  - Basic command line knowledge
  - SSH key pair for EC2
-What's Included:
+** What's Included: **
  - 2 Pre-trained ML models
  - Professional web interface
  - Automated deployment scripts
@@ -109,11 +109,7 @@ That's it! 🎉 Your application is now live!
     Voicemail plan status
     Geographic data (state, area code)
 
-    - Output:
-
-    Churn probability (0-100%)
-    Risk level (Low/Medium/High)
-    Confidence score
+    - Output: Churn probability (0-100%) | Risk level (Low/Medium/High) | Confidence score
 2. Model 2: Customer Lifetime Value (Regression)
     Algorithm: Linear Regression Pipeline
     - Performance Metrics: MAE: 898.36, RMSE: 1108.81, R²: 0.9328
@@ -128,11 +124,7 @@ That's it! 🎉 Your application is now live!
 
 # 🎮 How to Use
 1. Access the Application
-Open your browser and navigate to:
-
-Local: http://localhost:8000
-EC2: http://www.infosecurity.homes/
-
+Open your browser and navigate to: + Local: http://localhost:8000 | + EC2: http://www.infosecurity.homes/
 2. Enter Customer Data
 Fill in the form with customer information:
 

@@ -100,8 +100,8 @@ That's it! 🎉 Your application is now live!
 # 📊 Machine Learning Models
 1. Model 1: Churn Prediction (Classification)
     Algorithm: Tuned Random Forest Classifier
-    1. Performance Metrics: Accuracy: 0.867, Precision: 0.552, Recall: 0.337, F1 Score: 0.418
-    2. Features Used:
+    - Performance Metrics: Accuracy: 0.867, Precision: 0.552, Recall: 0.337, F1 Score: 0.418
+    - Features Used:
     Account length
     Call volumes (day/evening/night/international)
     Customer service calls
@@ -109,20 +109,20 @@ That's it! 🎉 Your application is now live!
     Voicemail plan status
     Geographic data (state, area code)
 
-    3. Output:
+    - Output:
 
     Churn probability (0-100%)
     Risk level (Low/Medium/High)
     Confidence score
 2. Model 2: Customer Lifetime Value (Regression)
     Algorithm: Linear Regression Pipeline
-    1. Performance Metrics: MAE: 898.36, RMSE: 1108.81, R²: 0.9328
-    2. Features Used:
+    - Performance Metrics: MAE: 898.36, RMSE: 1108.81, R²: 0.9328
+    - Features Used:
         Account length
         Monthly charges (day/evening/night/international)
         Service plan indicators
         Usage patterns
-    3. Output:
+    - Output:
         Estimated CLV in dollars
         Revenue forecast
 
